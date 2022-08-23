@@ -1,0 +1,38 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px 450px 80px;
+
+}
+
+.section {
+  font-family: cursive;
+  border: 1px solid black;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  /* for text center */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  background-color: aqua;
+  grid-column: 2 / -1;
+}
+.menu {
+  background-color: blueviolet;
+  /* 1 number line to 3 number line ( top to bottom)   */
+  grid-row: 1/3; 
+
+}
+.content {
+  background-color: blue;
+  /* expansion from 2 line to last line */
+  grid-column: 2 / -1;
+}
+.footer {
+  background-color: green;
+  grid-column: 1 / -1;
+}
